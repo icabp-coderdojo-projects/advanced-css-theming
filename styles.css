@@ -1,0 +1,13 @@
+.container {
+  background-color: var(--background);
+  padding: 40px;
+}
+
+.container > p {
+  color: var(--text);
+  font-size: 2em;
+}
+section {
+  background-color: var(--background);
+  color: var(--text);
+}

@@ -1,0 +1,95 @@
+let str = "sdas"
+undefined
+ss = str
+"sdas"
+ss = "sdasdasdasd"
+"sdasdasdasd"
+str
+"sdas"
+let newob;
+undefined
+let a = {s: "sd", d:"ss"}
+undefined
+a
+Object { s: "sd", d: "ss" }
+
+Object.keys(a).forEach(k => {newobj[k]} = a[k]})
+SyntaxError: missing ) after argument list
+debugger eval code:1:40
+Object.keys(a).forEach(k => {newobj[k] = a[k]})
+ReferenceError: newobj is not defined
+debugger eval code:1:30
+newobj = {}
+Object {  }
+
+Object.keys(a).forEach(k => {newobj[k] = a[k]})
+undefined
+newonj
+ReferenceError: newonj is not defined
+debugger eval code:1:1
+newonj
+ReferenceError: newonj is not defined
+debugger eval code:1:1
+newobj
+Object { s: "sd", d: "ss" }
+
+newobj.s = "sadasd"
+"sadasd"
+a
+Object { s: "sd", d: "ss" }
+
+newobj
+Object { s: "sadasd", d: "ss" }
+
+a
+Object { s: "sd", d: "ss" }
+
+a.oop = {nob: "nob"}
+Object { nob: "nob" }
+
+newobj = {}
+Object {  }
+
+a
+{…}
+​
+d: "ss"
+​
+oop: {…}
+​​
+nob: "nob"
+​​
+<prototype>: Object { … }
+​
+s: "sd"
+​
+<prototype>: Object { … }
+
+Object.keys(a).forEach(k => {newobj[k] = a[k]})
+undefined
+newobj
+Object { s: "sd", d: "ss", oop: {…} }
+
+a.oop.nob = "new str"
+"new str"
+newobj
+{…}
+​
+d: "ss"
+​
+oop: {…}
+​​
+nob: "new str"
+​​
+<prototype>: Object { … }
+​
+s: "sd"
+​
+<prototype>: Object { … }
+
+typeof(newobj) === "object"
+true
+typeof(1) === "object"
+false
+typeof(newobj) === "object"
+true

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="themes.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <article class="container">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+        necessitatibus neque officia voluptates fugit ipsa tempora quidem
+        perferendis repudiandae vero sequi quos dignissimos quasi molestiae
+        porro architecto, officiis odio aperiam.
+      </p>
+    </article>
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+        inventore neque ab quos. Nulla expedita veniam corporis recusandae iste
+        voluptatibus aliquam eum, commodi, quas quam placeat numquam vero totam
+        corrupti?
+      </p>
+    </section>
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+        inventore neque ab quos. Nulla expedita veniam corporis recusandae iste
+        voluptatibus aliquam eum, commodi, quas quam placeat numquam vero totam
+        corrupti?
+      </p>
+    </section>
+    <button id="change">Dark theme</button>
+    <script>
+      const applyTheme = theme => {
+        let out = "";
+        Object.keys(theme).forEach(k => (out += `--${k}: ${theme[k]};`));
+        return out;
+      };
+      let dark = false;
+      const themes = {
+        light: {
+          background: "#fff",
+          text: "#000"
+        },
+        dark: {
+          background: "#000",
+          text: "#fff"
+        }
+      };
+      document.body.setAttribute("style", applyTheme(themes.light));
+      document.querySelector("#change").addEventListener("click", e => {
+        if (dark) {
+          document.body.setAttribute("style", applyTheme(themes.light));
+          dark = false;
+          e.currentTarget.innerText = "Dark Theme";
+        } else {
+          document.body.setAttribute("style", applyTheme(themes.dark));
+          dark = true;
+          e.currentTarget.innerText = "Light Theme";
+        }
+      });
+    </script>
+  </body>
+</html>
